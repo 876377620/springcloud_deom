@@ -1,0 +1,16 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name:  microservicecloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:876377620/springcloud.git  #GitHub上面的git仓库名字
+          username: 876377620@qq.com
+          password: zjsdjy566588
+          search-paths: springcloud   #重点在上面,如果git项目中没有二级文件夹,则将引入全部配置文件,有文件夹则需添加文件夹路径
+
+
